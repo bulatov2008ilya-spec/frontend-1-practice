@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание 1. HTML/CSS</title>
+    <title>Выбор даты и времени</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Моя первая практика</h1>
-    <p>Базовая структура HTML страницы успешно настроена и готова к проверке.</p>
+    <header class="header">
+        <h1>Барбершоп</h1>
+        <p>Шаг 3: Выбор даты и времени</p>
+    </header>
+
+    <main class="main-content">
+        <section class="calendar-section">
+            <h2>Выберите день</h2>
+            <div class="calendar-grid">
+                <button class="day-btn">Пн, 9 ноя</button>
+                <button class="day-btn active">Вт, 10 ноя</button>
+                <button class="day-btn">Ср, 11 ноя</button>
+            </div>
+        </section>
+
+        <section class="time-section">
+            <h2>Доступное время</h2>
+            <div class="time-grid">
+                <button class="time-slot busy">10:00 (Занято)</button>
+                <button class="time-slot">11:00</button>
+                <button class="time-slot">12:00</button>
+                <button class="time-slot">13:00</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <button class="submit-btn">Подтвердить запись</button>
+    </footer>
 </body>
 </html>
